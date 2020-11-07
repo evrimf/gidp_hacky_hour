@@ -3,7 +3,7 @@ channels:
 - bioconda
 dependencies:
 - fastqc=0.11.9
-- sra-tools=2.7.0
+- sra-tools=2.8.0
  # Specify python version (not required but can help with downstream conflicts)
 - python=3.7.6
 
@@ -17,3 +17,12 @@ dependencies:
 
 # For downloading files
 - wget=1.20.1
+
+# For aggregating output from FastQC
+- multiqc=1.7
+# For mapping reads to a genome
+- bowtie2=2.3.5.1
+# For sorting the output from Bowtie2
+- samtools=1.10
+# For generating a count table for further analysis
+- htseq=0.11.2
