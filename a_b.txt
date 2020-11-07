@@ -1,0 +1,3 @@
+Concatenating some a.upper.txt b.upper.txt
+THIS IS OCTOBER.TXT
+THIS IS B.TXT
