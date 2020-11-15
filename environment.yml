@@ -1,28 +1,20 @@
 channels:
-- conda-forge
-- bioconda
+  - conda-forge
+  - bioconda
+  - main
+  - r
 dependencies:
-- fastqc=0.11.9
-- sra-tools=2.8.0
- # Specify python version (not required but can help with downstream conflicts)
-- python=3.7.6
-
-# The workflow manager
-- snakemake-minimal=5.10.0
-
-# For visualizing workflows
-- graphviz=2.42.3
-- xorg-libxrender
-- xorg-libxpm
-
-# For downloading files
-- wget=1.20.1
-
-# For aggregating output from FastQC
-- multiqc=1.7
-# For mapping reads to a genome
-- bowtie2=2.3.5.1
-# For sorting the output from Bowtie2
-- samtools=1.10
-# For generating a count table for further analysis
-- htseq=0.11.2
+  - python=3.7.6
+  - fastqc=0.11.9
+  - sra-tools=2.10.1
+  - snakemake-minimal=5.10.0
+  - multiqc=1.8
+  - bowtie2=2.3.5.1
+  - samtools=1.10
+  - htseq=0.11.2
+  - bedtools=2.29.2
+  - wget=1.20.1
+  - graphviz=2.42.3
+  - jupyter=1.0.0
+  - pandas=1.0.1
+  - seaborn=0.10.0
